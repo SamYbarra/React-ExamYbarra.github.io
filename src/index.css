@@ -1,0 +1,94 @@
+:root {
+    --color1: #F23DB3;
+    --color2: #262B8C;
+    --color3: #40b9d7;
+    --color4: #F27405;
+    --color5: #F21B07;
+    --color-blanco: #A0E8E1;
+    --color-negro: #000000;
+    --color-gris-claro: #E1D282;
+    --color-gris-oscuro: #333333;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 200;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.padded {
+    padding: 90px 0;
+}
+
+.end-90 {
+    right: 10px;
+}
+
+.list-group-item.active {
+    background-color: var(--color5);
+    border-color: var(--color5);
+}
+
+.text-bg-secondary {
+    background-color: var(--color4) !important;
+}
+
+/* RESPONSIVE *****************/
+@media (min-width: 1680px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1600px;
+    }
+}
+
+/* PRELOAD https://loading.io/css/ ***/
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid var(--color1);
+    border-color: var(--color1) transparent var(--color1) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
